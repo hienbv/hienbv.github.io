@@ -1,128 +1,877 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="blog">
+<html lang="en" style="" class=" js no-touch cssanimations csstransitions"><!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <title>HienBV's Blog</title>
+
+        <!-- Basic Page Needs -->
         <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="hienbv">
 
-        <title>HOME | Tôi là lập trình viên</title>
-        <!-- Bootstrap Core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Theme CSS -->
-        <link href="css/clean-blog.css" rel="stylesheet">
-        <!-- Custom Fonts -->
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+        <!-- Mobile Specific Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- CSS | bootstrap -->
+        <!-- Credits: http://getbootstrap.com/ -->
+        <link rel="stylesheet" type="text/css" href="./asset/css/bootstrap.min.css">
+
+        <!-- CSS | font-awesome -->
+        <!-- Credits: http://fortawesome.github.io/Font-Awesome/icons/ -->
+        <link rel="stylesheet" type="text/css" href="./asset/css/font-awesome.min.css">
+
+        <!-- CSS | simple-line-icons -->
+        <!-- Credits: https://github.com/thesabbir/simple-line-icons -->
+        <link rel="stylesheet" type="text/css" href="./asset/css/simple-line-icons.min.css">
+
+        <!-- CSS | colors -->
+        <!-- Credits: http://themeforest.net/user/FlexyCodes -->
+        <link rel="stylesheet" type="text/css" href="./asset/css/color_2.css" id="colors-style">
+
+        <!-- CSS | Style -->
+        <!-- Credits: http://themeforest.net/user/FlexyCodes -->
+        <link rel="stylesheet" type="text/css" href="./asset/css/main.css">
+
+        <!-- Js | modernizr.js -->
+        <!-- Credits: http://modernizr.com -->
+        <script type="text/javascript" src="./asset/js/modernizr.custom.js"></script>
+
+
+        <!-- CSS | Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="http://demo.flexy-codes.com/mzcard/images/favicon/favicon.ico">
+
+        <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/icons/font-awesome-ie7.min.css"/>
+<![endif]-->
+
+        <script type="text/javascript" charset="UTF-8" src="./asset/js/common.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="./asset/js/util.js"></script>
+        <script type="text/javascript" charset="UTF-8" src="./asset/js/infowindow.js"></script>
     </head>
+
     <body>
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header page-scroll">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                Menu <i class="fa fa-bars"></i>
-                            </button>
-                            <a class="navbar-brand" href="about.html">Bùi Văn Hiến</a>
-                        </div>
 
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a href="about.html">About</a>
-                                </li>
-                                <li>
-                                    <a href="post.html">PHP</a>
-                                </li>
-                                <li>
-                                    <a href="post.html">Tutorial</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.navbar-collapse -->
-                    </div>
+        <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-                </div>
-
-            </div>
-            <!-- /.container -->
-        </nav>
-        <!-- Main Content -->
-        <div class="container" ng-controller="PostController" style="margin-top: 100px;">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="post-preview" ng-repeat="post in posts">
-                        <a href="{{post.link}}">
-                            <h3 class="post-title">
-                                {{post.title}}
-                            </h3>
-                        </a>
-                        <p class="post-meta">{{post.date| date:fullDate}}</p>
-                        <hr>
-                    </div>
-                    <div id="disqus_thread"></div>
-                </div>
+        <!-- Laoding page  -->
+        <div class="preloader" style="display: none;">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
             </div>
         </div>
-        <hr>
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <ul class="list-inline text-center">
-                            <li>
-                                <a href="https://twitter.com/daube205">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/Sir.Hien">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/hienbv/">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        </ul>
-                        <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
-                    </div>
+        <!-- End Laoding page  -->
+
+        <!-- #wrappers -->
+        <div id="wrappers">
+
+            <!-- #header -->
+            <header id="header" tabindex="0" style="overflow-y: hidden; outline: none;">
+
+                <div class="menu_closed" id="menu_closed" title="" data-toggle="tooltip" data-original-title="Close Menu" style="display: none;">
+                    <i class="fa fa-times"></i>
                 </div>
+
+                <div class="logo">
+                    <a href="">
+                        <img src="./asset/img/profile_img.jpg" width="122" height="122" alt="Logo">
+                    </a>
+                </div>
+
+                <h4 class="tagline">This is a lovely area for the tagline</h4>
+
+
+                <!-- .navigation -->	
+                <nav class="navigation">
+                    <ul class="list-unstyled">
+
+                        <li class="profile active">
+                            <a href="#profile" class="profile link_menu">
+                                <i class="fa fa-user icon_menus"></i>
+                                <span class="nav-label">profile</span>
+                            </a>
+                        </li>
+                        <li class="resume">
+                            <a href="#resume" class="resume link_menu">
+                                <i class="fa fa-tasks icon_menus"></i> 
+                                <span class="nav-label">resume</span>
+                            </a>
+                        </li>
+                        <li class="blog">
+                            <a href="#blog" class="blog link_menu">
+                                <i class="fa fa-bullhorn icon_menu"></i> 
+                                <span class="nav-label">blog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End .navigation -->	
+
+                <!-- #header_social_ul -->	
+                <div class="social-ul" id="header_social_ul">
+                    <ul>
+                        <li class="social-twitter">
+                            <a href="https://twitter.com/daube205" target="_blank" data-toggle="tooltip" data-original-title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social-facebook">
+                            <a href="https://www.facebook.com/Sir.Hien" target="_blank" data-toggle="tooltip" data-original-title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="social-linkedin">
+                            <a href="https://vn.linkedin.com/in/hien-bv-41740a70" target="_blank" data-toggle="tooltip" data-original-title="Linkedin">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="social-github">
+                            <a href="https://github.com/hienbv" target="_blank" data-toggle="tooltip" data-original-title="Github">
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End #header_social_ul -->	
+
+                <!-- .copyright -->	
+                <div class="copyright">
+                    <p style="margin-bottom:0;">© 2016.by <a href="">HienBV</a></p>		
+                </div>
+                <!-- End.copyright -->	
+
+            </header>
+            <!-- End #header -->
+
+            <!-- .header-main -->
+            <div class="header-main">
+                <div class="content_wrappers">		
+                    <div class="logo_wrapper">
+
+                        <span class="site_title">
+                            <a href="http://demo.flexy-codes.com/mzcard/index-1.html" title="Throne">
+                                <img src="./asset/img/logo-top.png" alt="FlexyBlog">
+                            </a>
+                        </span>
+
+                    </div>
+
+                    <a class="nav-btn menu_close" id="btn_open_menu" href="http://demo.flexy-codes.com/mzcard/index-1.html#">
+                        <i class="fa fa-bars"></i>
+                    </a>
+
+                </div>
+
             </div>
-        </footer>
-        <!-- jQuery -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <!-- Bootstrap Core JavaScript -->
-        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-        <script src="vendor/angular.min.js"></script>
-        <script src="js/disqus.js"></script>
-        <script src="js/main.js"></script>
+            <!-- End .header-main -->
+
+            <!-- #main -->
+            <div id="main">
+
+                <!-- #profile -->
+                <section id="profile" class="layers page_current">
+
+                    <h2 style="display:none">profile</h2>
+
+                    <!-- .page_content -->
+                    <div class="page_content" tabindex="2" style="overflow-y: hidden; outline: none;">
+
+                        <!-- .block-header -->
+                        <div class="block-header">
+
+                            <!-- .my_profile -->
+                            <div class="row no-marg my_profile">
+
+                                <div class="col-xs-12 col-md-6 no-padd image_profile">
+                                    <!--<div class="overfly"></div>-->	
+                                </div>
+
+                                <div class="col-xs-12 col-md-6 no-padd image_profile_resp">
+                                    <div class="home_profile_resp"> 
+                                        <img src="./asset/img/profile_img.jpg" alt=""> 
+                                    </div>
+                                </div>
+
+                                <!-- .info_profile -->
+                                <div class="col-xs-12 col-md-6 no-padd info_profile">
+
+                                    <!-- .bg_desc -->
+                                    <div class="bg_desc clearfix">
+                                        <div class="inner-text">
+                                            <h2>I am John Doe</h2>
+                                            <small class="myjob">web developer</small>
+
+                                            <div class="feature-desc">
+                                                <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
+
+                                                <p>Aliquam lobortis nec nibh a blandit. Quisque ultricies pharetra hendrerit. Nunc fringilla sapien eget viverra mollis.</p>
+                                            </div> 
+
+                                            <div class="signature text-right">
+                                                <div class="inner">
+                                                    <img src="./asset/img/signature.png" alt="Signature">
+                                                    <cite class="name">john doe</cite>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End .bg_desc -->
+
+                                    <!-- .bg_info -->
+                                    <div class="bg_info clearfix">
+                                        <div class="inner-text">
+                                            <ul>
+                                                <li class="user_name"><strong><i class="fa fa-user"></i>Name</strong> : john doe</li>
+                                                <li><strong><i class="fa fa-calendar"></i>Birthdate</strong> : March 18, 1988</li>
+                                                <li><strong><i class="fa fa-phone"></i>Phone</strong> : +123 (21) 1234-5678</li>
+                                                <li><strong><i class="glyphicon glyphicon-phone"></i>Mobile</strong> : +123 (21) 1234-5679</li>
+                                                <li><strong><i class="fa fa-skype"></i>Skype</strong> : John_Doe</li>
+                                                <li><strong><i class="fa fa-envelope"></i>Email</strong> : john.doe@gmail.com</li>
+                                                <li><strong><i class="fa fa-globe"></i>Website</strong> : <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" target="_blank">www.anderson-smith.com</a></li>
+                                                <li><strong><i class="glyphicon glyphicon-map-marker"></i>Adresse</strong> : 1732 Monroe Street Houston, TX 77055.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- End .bg_info -->
+
+                                    <!-- .header_social_ul -->
+                                    <div class="social-ul bg_social" id="profile_social_ul">
+                                        <ul>
+                                            <li class="social-twitter"><a href="http://demo.flexy-codes.com/mzcard/index-1.html#" target="_blank" title="" data-toggle="tooltip" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                            <li class="social-facebook"><a href="http://demo.flexy-codes.com/mzcard/index-1.html#" target="_blank" title="" data-toggle="tooltip" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                            <li class="social-google"><a href="http://demo.flexy-codes.com/mzcard/index-1.html#" target="_blank" title="" data-toggle="tooltip" data-original-title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+                                            <li class="social-linkedin"><a href="http://demo.flexy-codes.com/mzcard/index-1.html#" target="_blank" title="" data-toggle="tooltip" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                            <li class="social-dribbble"><a href="http://demo.flexy-codes.com/mzcard/index-1.html#" target="_blank" title="" data-toggle="tooltip" data-original-title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+                                            <li class="social-behance"><a href="http://demo.flexy-codes.com/mzcard/index-1.html#" target="_blank" title="" data-toggle="tooltip" data-original-title="Behance"><i class="fa fa-behance"></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- End .header_social_ul -->
+
+                                </div>
+                                <!-- End .info_profile -->
+
+                            </div>
+                            <!-- End .my_profile -->
+
+                        </div>
+                        <!-- End .block-header -->
+
+                    </div>
+                    <!-- End .page_content -->
+
+                </section>
+                <!-- End #about -->
+
+                <!-- #resume -->
+                <section id="resume" class="layers">
+                    <h2 style="display:none">resume</h2>
+
+                    <!-- page_content -->
+                    <div class="page_content" tabindex="4" style="overflow-y: hidden; outline: none;">
+
+                        <!-- .container-fluid -->
+                        <div class="container-fluid no-marg">
+
+                            <!-- .row -->
+                            <div class="row row_responsive">
+
+                                <!-- .section_general -->
+                                <div class="col-lg-11 section_general">
+
+                                    <header class="section-header">
+                                        <h3 class="section-title">Resume – Personal Info</h3>
+                                        <p>Awesome &amp; Creative Resume For You</p>
+                                        <div class="border-divider"></div>
+                                    </header>
+
+                                    <div class="row section_separate">
+
+                                        <!-- .resume-left -->
+                                        <div class="col-md-6 resume-left">    
+
+                                            <div class="title-section">
+                                                <h2 class="section_title">Experience</h2>
+                                                <div class="sep2"></div>
+                                            </div>
+
+                                            <!-- .attributes -->
+                                            <ul class="attributes">
+                                                <li class="first">
+                                                    <h5>Web Developer <span class="duration"><i class="fa fa-calendar color"></i> 2011 - 2013</span></h5>
+                                                    <h6><span class="fa fa-briefcase"></span> Name of Company</h6>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
+                                                </li>
+                                                <li>
+                                                    <h5>Front-End Developer <span class="duration"><i class="fa fa-calendar color"></i> 2010 - 2011</span></h5>
+                                                    <h6><span class="fa fa-briefcase"></span> Name of Company</h6>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
+                                                </li>
+
+                                            </ul>
+                                            <!-- /.attributes -->
+
+                                            <div class="title-section">
+                                                <h2 class="section_title">Education</h2>
+                                                <div class="sep2"></div>
+                                            </div>
+
+                                            <!-- .attributes -->
+                                            <ul class="attributes">
+                                                <li class="first">
+                                                    <h5>Master of Engineering <span class="duration"><i class="fa fa-calendar color"></i> 2011 - 2013</span></h5>
+                                                    <h6><span class="fa fa-book"></span> Name of University</h6>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
+                                                </li>
+                                                <li>
+                                                    <h5>Bachelor of Engineering <span class="duration"><i class="fa fa-calendar color"></i> 2010 - 2011</span></h5>
+                                                    <h6><span class="fa fa-book"></span> Name of University</h6>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
+                                                </li>
+                                            </ul>
+                                            <!-- /.attributes -->
+
+                                            <div class="title-section">
+                                                <h2 class="section_title">Awards</h2>
+                                                <div class="sep2"></div>
+                                            </div>
+
+                                            <!-- .attributes -->
+                                            <ul class="attributes">
+                                                <li class="first">
+                                                    <h5>Graphic &amp; Art Direction <span class="duration"><i class="fa fa-calendar color"></i> 2013 - 2014</span></h5>
+                                                    <h6><span class="fa fa-trophy"></span> Name of Institute</h6>
+                                                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
+                                                </li>
+                                                <li>
+                                                    <h5>Design &amp; Art Direction <span class="duration"><i class="fa fa-calendar color"></i> 2012 - 2013</span></h5>
+                                                    <h6><span class="fa fa-trophy"></span> Name of Institute</h6>
+                                                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
+                                                </li>
+
+                                            </ul>
+                                            <!-- /.attributes -->
+
+                                            <!-- .title_content -->
+                                            <div class="title-section">
+                                                <h2 class="section_title">Download my resume</h2>
+                                                <div class="sep2"></div>
+                                            </div>
+                                            <!-- /.title_content -->
+
+                                            <!-- .download_resume -->
+                                            <a class="download" href="http://demo.flexy-codes.com/mzcard/index-1.html#">
+                                                <span data-hover="Download My Resume">
+                                                    <i class="fa fa-cloud-download"></i> Download My Resume
+                                                </span>
+                                            </a>
+                                            <!-- /.download_resume -->
+
+                                        </div>
+                                        <!-- /.resume-left -->
+
+                                        <!-- .resume-right -->
+                                        <div class="col-md-6">
+
+                                            <div class="title-section">
+                                                <h2 class="section_title">Designs skills</h2>
+                                                <div class="sep2"></div>
+                                            </div>
+
+                                            <div class="skills">
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix" data-percent="95%">
+                                                    <div class="skillbar-title"><span>Photoshop</span></div>
+                                                    <div class="skillbar-bar" style="width: 95%;"></div>
+                                                    <div class="skill-bar-percent">95%</div>
+                                                </div>
+
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix" data-percent="90%">
+                                                    <div class="skillbar-title"><span>Illustrateur</span></div>
+                                                    <div class="skillbar-bar" style="width: 90%;"></div>
+                                                    <div class="skill-bar-percent">90%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix" data-percent="65%">
+                                                    <div class="skillbar-title"><span>Indesign</span></div>
+                                                    <div class="skillbar-bar" style="width: 65%;"></div>
+                                                    <div class="skill-bar-percent">65%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix" data-percent="35%">
+                                                    <div class="skillbar-title"><span>Flash</span></div>
+                                                    <div class="skillbar-bar" style="width: 35%;"></div>
+                                                    <div class="skill-bar-percent">35%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+                                            </div>
+
+
+                                            <!-- .title_content -->
+                                            <div class="title-section">
+                                                <h2 class="section_title">Programming skills</h2>
+                                                <div class="sep2"></div>
+                                            </div>
+                                            <!-- /.title_content -->
+
+                                            <div class="skills">
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix" data-percent="85%">
+                                                    <div class="skillbar-title"><span>Wordpress</span></div>
+                                                    <div class="skillbar-bar" style="width: 85%;"></div>
+                                                    <div class="skill-bar-percent">85%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix" data-percent="75%">
+                                                    <div class="skillbar-title"><span>Joomla</span></div>
+                                                    <div class="skillbar-bar" style="width: 75%;"></div>
+                                                    <div class="skill-bar-percent">75%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix" data-percent="60%">
+                                                    <div class="skillbar-title"><span>Drupal</span></div>
+                                                    <div class="skillbar-bar" style="width: 60%;"></div>
+                                                    <div class="skill-bar-percent">60%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix" data-percent="89%">
+                                                    <div class="skillbar-title"><span>Php</span></div>
+                                                    <div class="skillbar-bar" style="width: 89%;"></div>
+                                                    <div class="skill-bar-percent">89%</div>
+                                                </div>
+                                                <!-- /.skillbar --> 
+                                            </div>
+
+                                            <!-- .title_content -->
+                                            <div class="title-section">
+                                                <h2 class="section_title">Office skills</h2>
+                                                <div class="sep2"></div>
+                                            </div>
+                                            <!-- /.title_content -->
+
+                                            <div class="skills">       
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix" data-percent="85%">
+                                                    <div class="skillbar-title"><span>MS Excel</span></div>
+                                                    <div class="skillbar-bar" style="width: 85%;"></div>
+                                                    <div class="skill-bar-percent">85%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix " data-percent="95%">
+                                                    <div class="skillbar-title"><span>MS Word</span></div>
+                                                    <div class="skillbar-bar" style="width: 95%;"></div>
+                                                    <div class="skill-bar-percent">95%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix " data-percent="60%">
+                                                    <div class="skillbar-title"><span>Powerpoint</span></div>
+                                                    <div class="skillbar-bar" style="width: 60%;"></div>
+                                                    <div class="skill-bar-percent">60%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix " data-percent="40%">
+                                                    <div class="skillbar-title"><span>SharePoint</span></div>
+                                                    <div class="skillbar-bar" style="width: 40%;"></div>
+                                                    <div class="skill-bar-percent">40%</div>
+                                                </div>
+                                                <!-- /.skillbar -->   
+                                            </div>
+
+                                            <!-- .title_content -->
+                                            <div class="title-section">
+                                                <h2 class="section_title">Language skills</h2>
+                                                <div class="sep2"></div>
+                                            </div>
+                                            <!-- /.title_content -->
+
+                                            <div class="skills">
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix" data-percent="90%">
+                                                    <div class="skillbar-title"><span>English</span></div>
+                                                    <div class="skillbar-bar" style="width: 90%;"></div>
+                                                    <div class="skill-bar-percent">90%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix " data-percent="80%">
+                                                    <div class="skillbar-title"><span>French</span></div>
+                                                    <div class="skillbar-bar" style="width: 80%;"></div>
+                                                    <div class="skill-bar-percent">80%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix " data-percent="50%">
+                                                    <div class="skillbar-title"><span>Spanish</span></div>
+                                                    <div class="skillbar-bar" style="width: 50%;"></div>
+                                                    <div class="skill-bar-percent">50%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix " data-percent="60%">
+                                                    <div class="skillbar-title"><span>Swiss</span></div>
+                                                    <div class="skillbar-bar" style="width: 60%;"></div>
+                                                    <div class="skill-bar-percent">60%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                            </div>
+
+                                            <!-- .title_content -->
+                                            <div class="title-section">
+                                                <h2 class="section_title">Hobbies and interests</h2>
+                                                <div class="sep2"></div>
+                                            </div>
+                                            <!-- /.title_content -->
+
+                                            <div class="skills">
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix" data-percent="90%">
+                                                    <div class="skillbar-title"><span>Reading</span></div>
+                                                    <div class="skillbar-bar" style="width: 90%;"></div>
+                                                    <div class="skill-bar-percent">95%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix " data-percent="80%">
+                                                    <div class="skillbar-title"><span>Biking</span></div>
+                                                    <div class="skillbar-bar" style="width: 80%;"></div>
+                                                    <div class="skill-bar-percent">85%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix " data-percent="50%">
+                                                    <div class="skillbar-title"><span>football</span></div>
+                                                    <div class="skillbar-bar" style="width: 50%;"></div>
+                                                    <div class="skill-bar-percent">90%</div>
+                                                </div>
+                                                <!-- /.skillbar -->
+
+                                                <!-- .skillbar -->
+                                                <div class="skillbar clearfix " data-percent="60%">
+                                                    <div class="skillbar-title"><span>travel</span></div>
+                                                    <div class="skillbar-bar" style="width: 60%;"></div>
+                                                    <div class="skill-bar-percent">80%</div>
+                                                </div>
+                                                <!-- /.skillbar -->							
+
+                                            </div>
+
+                                        </div>
+                                        <!-- /.resume-right -->
+
+                                    </div>	
+                                    <!-- /.end row -->
+
+                                </div>
+                                <!-- End .section_general -->
+
+                            </div>
+                            <!-- End .row -->
+
+                        </div>
+                        <!-- End .container-fluid -->
+
+
+
+                    </div>
+                    <!-- End page_content -->
+
+                </section>
+                <!-- End #resume -->
+
+                <!-- #blog -->
+                <section id="blog" class="layers blog-content-grid">
+                    <h2 style="display:none">blog</h2>
+                    <!-- .page_content -->
+                    <div class="page_content" tabindex="6" style="overflow-y: hidden; outline: none;">
+
+                        <!-- .row -->
+                        <div class="row row_responsive">
+
+                            <!-- post -->
+                            <div class="col-sm-6 col-md-4">
+
+                                <article>
+
+                                    <div class="post-thumb">
+                                        <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" class="image-link">
+                                            <img src="./asset/img/grid_1-333x222.jpg" alt="">  
+                                        </a>					
+                                    </div>
+
+                                    <div class="post-body">
+
+                                        <h3 class="post-title"><a href="http://demo.flexy-codes.com/mzcard/index-1.html#">Awesome Post Title</a></h3>
+
+                                        <div class="post-meta">
+
+                                            <ul>
+                                                <li><i class="icon-user"></i>by : <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                                <li class="separate_li">|</li>
+                                                <li><i class="icon-clock"></i>January 18, 2015</li>
+                                                <li class="separate_li">|</li>
+                                                <li><i class="icon-folder"></i><a href="http://demo.flexy-codes.com/mzcard/index-1.html#" rel="category tag" class="categ_post">WordPress</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="post-content">
+                                            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                        </div>
+
+                                        <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" class="read_more_but">Continue Reading</a>
+
+                                        <div class="footer_post">
+                                            <ul>
+                                                <li><i class="icon-picture"></i></li>
+                                                <li><i class="icon-bubble"></i> <a href="http://demo.flexy-codes.com/mzcard/index-1.html#">4</a></li>
+                                                <li><i class="icon-heart"></i> <a href="http://demo.flexy-codes.com/mzcard/index-1.html#">35</a></li>
+                                                <li><i class="icon-eye"></i> 216</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+                            <!-- //post -->
+
+                            <!-- post -->
+                            <div class="col-sm-6 col-md-4">
+
+                                <article>
+
+                                    <div class="post-thumb">
+                                        <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" class="image-link">
+                                            <img src="./asset/img/grid_2-333x222.jpg" alt="">  
+                                        </a>					
+                                    </div>
+
+                                    <div class="post-body">
+
+                                        <h3 class="post-title"><a href="http://demo.flexy-codes.com/mzcard/index-1.html#">Awesome Post Title</a></h3>
+
+                                        <div class="post-meta">
+
+                                            <ul>
+                                                <li><i class="icon-user"></i>by : <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                                <li class="separate_li">|</li>
+                                                <li><i class="icon-clock"></i>January 18, 2015</li>
+                                                <li class="separate_li">|</li>
+                                                <li><i class="icon-folder"></i><a href="http://demo.flexy-codes.com/mzcard/index-1.html#" rel="category tag" class="categ_post">WordPress</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="post-content">
+                                            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                        </div>
+
+                                        <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" class="read_more_but">Continue Reading</a>
+
+                                        <div class="footer_post">
+                                            <ul>
+                                                <li><i class="icon-music-tone-alt"></i></li>
+                                                <li><i class="icon-bubble"></i> <a href="http://demo.flexy-codes.com/mzcard/index-1.html#">4</a></li>
+                                                <li><i class="icon-heart"></i> <a href="http://demo.flexy-codes.com/mzcard/index-1.html#">35</a></li>
+                                                <li><i class="icon-eye"></i> 216</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+                            <!-- //post -->
+
+
+                            <!-- post -->
+                            <div class="col-sm-6 col-md-4">
+
+                                <article>
+
+                                    <div class="post-thumb">
+                                        <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" class="image-link">
+                                            <img src="./asset/img/grid_3-333x222.jpg" alt="">  
+                                        </a>					
+                                    </div>
+
+                                    <div class="post-body">
+
+                                        <h3 class="post-title"><a href="http://demo.flexy-codes.com/mzcard/index-1.html#">Awesome Post Title</a></h3>
+
+                                        <div class="post-meta">
+
+                                            <ul>
+                                                <li><i class="icon-user"></i>by : <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                                <li class="separate_li">|</li>
+                                                <li><i class="icon-clock"></i>January 18, 2015</li>
+                                                <li class="separate_li">|</li>
+                                                <li><i class="icon-folder"></i><a href="http://demo.flexy-codes.com/mzcard/index-1.html#" rel="category tag" class="categ_post">WordPress</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="post-content">
+                                            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                        </div>
+
+                                        <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" class="read_more_but">Continue Reading</a>
+
+                                        <div class="footer_post">
+                                            <ul>
+                                                <li><i class="icon-social-youtube"></i></li>
+                                                <li><i class="icon-bubble"></i> <a href="http://demo.flexy-codes.com/mzcard/index-1.html#">4</a></li>
+                                                <li><i class="icon-heart"></i> <a href="http://demo.flexy-codes.com/mzcard/index-1.html#">35</a></li>
+                                                <li><i class="icon-eye"></i> 216</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+                            <!-- //post -->
+
+                            <!-- post -->
+                            <div class="col-sm-6 col-md-4">
+
+                                <article>
+
+                                    <div class="post-thumb">
+                                        <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" class="image-link">
+                                            <img src="./asset/img/grid_4-333x222.jpg" alt="">  
+                                        </a>					
+                                    </div>
+
+                                    <div class="post-body">
+
+                                        <h3 class="post-title"><a href="http://demo.flexy-codes.com/mzcard/index-1.html#">Awesome Post Title</a></h3>
+
+                                        <div class="post-meta">
+
+                                            <ul>
+                                                <li><i class="icon-user"></i>by : <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" title="Posts by Youness" rel="author" class="author_post">Youness</a></li>
+                                                <li class="separate_li">|</li>
+                                                <li><i class="icon-clock"></i>January 18, 2015</li>
+                                                <li class="separate_li">|</li>
+                                                <li><i class="icon-folder"></i><a href="http://demo.flexy-codes.com/mzcard/index-1.html#" rel="category tag" class="categ_post">WordPress</a></li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="post-content">
+                                            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris sit amet sapien eget lacus...</p>
+                                        </div>
+
+                                        <a href="http://demo.flexy-codes.com/mzcard/index-1.html#" class="read_more_but">Continue Reading</a>
+
+                                        <div class="footer_post">
+                                            <ul>
+                                                <li><i class="icon-picture"></i></li>
+                                                <li><i class="icon-bubble"></i> <a href="http://demo.flexy-codes.com/mzcard/index-1.html#">4</a></li>
+                                                <li><i class="icon-heart"></i> <a href="http://demo.flexy-codes.com/mzcard/index-1.html#">35</a></li>
+                                                <li><i class="icon-eye"></i> 216</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+
+                                </article>
+
+                            </div>
+                            <!-- //post -->
+
+                        </div>
+
+                        <div class="main-pagination">
+                            <span class="page-numbers current">1</span>
+                            <a class="page-numbers" href="http://demo.flexy-codes.com/mzcard/index-1.html#">2</a>
+                            <a class="page-numbers" href="http://demo.flexy-codes.com/mzcard/index-1.html#">3</a>
+                            <a class="page-numbers" href="http://demo.flexy-codes.com/mzcard/index-1.html#">4</a>
+                            <a class="next page-numbers" href="http://demo.flexy-codes.com/mzcard/index-1.html#">
+                                <span class="visuallyhidden">Next</span><i class="fa fa-angle-right"></i>
+                            </a>	
+                        </div>
+
+
+                    </div>
+                </section>
+                <!-- End #blog -->
+
+            </div>
+            <!-- End #main -->
+        </div>
+        <!-- End #wrappers -->
+
+        <!-- jquery | jQuery 1.11.0 -->
+        <!-- Credits: http://jquery.com -->
+        <script type="text/javascript" src="./asset/js/jquery.min.js"></script>
+
+        <!-- Js | jquery.ui.effect.js -->
+        <!-- Credits: https://jqueryui.com/effect -->
+        <script type="text/javascript" src="./asset/js/jquery.ui.effect.min.js"></script>
+
+        <!-- Js | bootstrap -->
+        <!-- Credits: http://getbootstrap.com -->
+        <script type="text/javascript" src="./asset/js/bootstrap.min.js"></script> 
+
+        <!-- Js | jquery.cookie -->
+        <!-- Credits: https://github.com/carhartl/jquery-cookie --> 
+        <script type="text/javascript" src="./asset/js/jquery.cookie.js"></script>	
+
+        <!-- Js | nicescroll.js -->
+        <!-- Credits: http://areaaperta.com/nicescroll -->
+        <script type="text/javascript" src="./asset/js/jquery.nicescroll.min.js"></script>
+
+        <!-- jquery | portfolio -->
+        <!-- Credits: http://www.mixitup.io -->
+        <script type="text/javascript" src="./asset/js/jquery.mixitup.min.js"></script> 
+
+        <!-- jquery | prettyPhoto -->
+        <!-- Credits: http://www.no-margin-for-errors.com/ -->
+        <script type="text/javascript" src="./asset/js/jquery.prettyPhoto.js"></script>
+
+        <!-- Js | Js -->
+        <!-- Credits: http://themeforest.net/user/FlexyCodes -->
+        <script type="text/javascript" src="./asset/js/main.js"></script>
     </body>
 </html>
